@@ -42,7 +42,6 @@ public class BuyerService {
 	public Buyer getByGstNumber(String gstNumber) {
 		return buyerRepository.findByGstNumber(gstNumber);
 	}
-	
 	//UPDATE OPERATIONS
 	
 	public Buyer updateContact(String emailId, String contact) {

@@ -36,19 +36,19 @@ public class InventoryController {
 		return inventoryService.getAll();
 	}
 	@RequestMapping("/getByCompanyName")
-	public List<Inventory> getByCompanyName(String companyName) {
+	public List<Inventory> getByCompanyName(@RequestParam String companyName) {
 		return inventoryService.getByCompanyName(companyName);
 	}
 	@RequestMapping("/getBySellerId")
-	public List<Inventory> getBySellerId(String sellerId) {
+	public List<Inventory> getBySellerId(@RequestParam String sellerId) {
 		return inventoryService.getBySellerId(sellerId);
 	}
 	@RequestMapping("/getByInventoryId")
-	public Inventory getByInventoryId(String inventoryId) {
+	public Inventory getByInventoryId(@RequestParam String inventoryId) {
 		return inventoryService.getByInventoryId(inventoryId);
 	}
 	@RequestMapping("/getByInventoryType")
-	public Inventory getByInventoryType(String inventoryType) {
+	public Inventory getByInventoryType(@RequestParam String inventoryType) {
 		return inventoryService.getByInventoryId(inventoryType);
 	}
 	//UPDATE OPERATIONS REQUEST MAPPING

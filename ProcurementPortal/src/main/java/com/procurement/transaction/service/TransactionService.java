@@ -36,11 +36,17 @@ public class TransactionService {
 	public List<Transaction> getBySellerId(String sellerId) {
 		return transactionRepository.findBySellerId(sellerId);
 	}
+	public List<Transaction> getBySellerCompany(String sellerCompany) {
+		return transactionRepository.findBySellerCompany(sellerCompany);
+	}
 	public List<Transaction> getByInventoryType(String inventoryType) {
 		return transactionRepository.findBySellerCompany(inventoryType);
 	}
 	public List<Transaction> getByInventoryId(String inventoryId) {
 		return transactionRepository.findByInventoryId(inventoryId);
+	}
+	public Transaction getByTransactionId(String transactionId) {
+		return transactionRepository.findByTransactionId(transactionId);
 	}
 	
 	//UPDATE OPERATIONS
